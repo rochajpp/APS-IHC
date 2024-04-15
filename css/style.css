@@ -11,6 +11,10 @@
 body{
     font-family: sans-serif;
     height: 100vh;
+    background: url("/img/image.png") center;
+    animation: moveImage 14s infinite;
+    background-repeat: no-repeat;
+    background-size: 110%;
 }
 
 .header-container{
@@ -19,7 +23,7 @@ body{
     justify-content: center;
 }
 header{
-    background-color: var(--primaryColor);
+    background-color: #024221d8;
     height: 15%;
     display: flex;
     align-items: center;
@@ -31,10 +35,7 @@ header{
 
 main{
     height: 85%;
-    background: url("/img/image.png") center;
-    animation: moveImage 14s infinite;
-    background-repeat: no-repeat;
-    background-size: 110%;
+    
 }
 
 .main-container{
