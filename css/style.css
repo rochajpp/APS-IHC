@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primaryColor: #024221;
+}
+
+body{
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    background-color: var(--primaryColor);
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    width: 6rem;
+}
+
+main{
+    height: 85%;
+    background: url("/img/image.png") center;
+    animation: moveImage 14s infinite;
+    background-repeat: no-repeat;
+    background-size: 110%;
+}
+
+.main-container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    padding: 4rem 2rem;
+    border-radius: 0.5rem;
+    background-color: white;
+}
+
+form h1{
+    color: var(--primaryColor);
+}
+
+.input-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.input-area ion-icon{
+    font-size: 1.8rem;
+    color: var(--primaryColor);
+}
+
+form input{
+    padding: 0.5rem;
+    width: 20rem;
+    background-color: transparent;
+    border: 1px solid var(--primaryColor);
+    border-radius: 10rem;
+}
+#matricula{
+
+}
+form input::placeholder{
+    color: rgba(0, 0, 0, 0.593);
+}
+
+form input:focus{
+    border: 2px solid var(-primaryColor);
+}
+
+form button{
+    padding: 1rem 4rem;
+    color: white;
+    background-color: var(--primaryColor);
+    border: none;
+    font-weight: bold;
+    border-radius: 10rem;
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+
+@keyframes moveImage{
+    60%{
+        background-position: right center;
+    }
+}

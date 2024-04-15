@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Reserva - Sala De Estudos</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img class="logo" src="img/icon2.png">
+        </div>
+    </header>
+
+    <main>
+        <div class="main-container">
+            <form>
+                <h1>Entrar</h1>
+                <div class="input-area">
+                    <ion-icon name="person-circle-outline"></ion-icon>
+                    <input type="number" id="matricula" name="matricula" placeholder="Matrícula"/>
+                </div>
+                <div class="input-area">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input type="password" id="pass" name="pass" placeholder="Senha"/>
+                </div>
+                <button type="button" onclick="sendForm()">Acessar</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
+</body>
+</html>
