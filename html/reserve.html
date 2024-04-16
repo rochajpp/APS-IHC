@@ -4,9 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/img/icon.png">
-    <title>Reserva - Sala de Estudos</title>
+    <link rel="stylesheet" type="text/css" href="/css/reserve.css">
+    <title>Reserva - Sala De Estudos</title>
 </head>
 <body>
-    <h1>Teste</h1>
+    <header>
+        <div class="header-container">
+            <img class="logo" src="/img/icon2.png">
+        </div>
+    </header>
+
+    <main>
+        <div class="main-container">
+
+            <div class="choose">
+                <h1>Selecione a sala:</h1>
+                <div class="boxs">
+                    <a onclick="chooseOption(1)"><div id="sala1" class="box">Sala 1</div></a>
+                    <a onclick="chooseOption(2)"><div id="sala2" class="box">Sala 2</div></a>
+                    <a onclick="chooseOption(3)"><div id="sala3" class="box">Sala 3</div></a>
+                    <a onclick="chooseOption(4)"><div id="sala4" class="box">Sala 4</div></a>
+                    <a onclick="chooseOption(5)"><div id="sala5" class="box">Sala 5</div></a>
+                </div>
+            </div>
+
+            <div class="date">
+                <h1>Selecione uma data:</h1>
+                <input id="date" type="date" /> 
+                <button onclick="chooseDate()" type="button">Enviar</button>
+                <span id="err">Data inválida!</span>
+            </div>
+
+            <div class="time">
+                <h1>Selecione um horário:</h1>
+                <div class="boxs-time">
+                    <a onclick="chooseTime(8)"><div class="box-time">8:00</div></a>
+                    <a onclick="chooseTime(9)"><div class="box-time">9:00</div></a>
+                    <a onclick="chooseTime(10)"><div class="box-time">10:00</div></a>
+                    <a onclick="chooseTime(11)"><div class="box-time">11:00</div></a>
+                    <a onclick="chooseTime(12)"><div class="box-time">12:00</div></a>
+                    <a onclick="chooseTime(13)"><div class="box-time">13:00</div></a>
+                    <a onclick="chooseTime(14)"><div class="box-time">14:00</div></a>
+                    <a onclick="chooseTime(15)"><div class="box-time">15:00</div></a>
+                    <a onclick="chooseTime(16)"><div class="box-time">16:00</div></a>
+                    <a onclick="chooseTime(17)"><div class="box-time">17:00</div></a>
+                    <a onclick="chooseTime(18)"><div class="box-time">18:00</div></a>
+                    <a onclick="chooseTime(19)"><div class="box-time">19:00</div></a>
+                    <a onclick="chooseTime(20)"><div class="box-time">20:00</div></a>
+                    <a onclick="chooseTime(21)"><div class="box-time">21:00</div></a>
+                </div>
+            </div>
+
+            <div class="final">
+                <h1>Reserva finalizada com sucesso!</h1>
+                <br>
+                <h2 id="pFinal"></h2>
+                <br>
+                <br>
+                <a href="/html/reserve.html"><button class="finalButton">Voltar</button></a>
+            </div>
+        </div>
+    </main>
+
+    <script src="/js/reserve.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
 </body>
 </html>

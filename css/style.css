@@ -51,12 +51,14 @@ form{
     justify-content: space-between;
     align-items: center;
     gap: 3rem;
-    padding: 4rem 2rem;
+    padding: 2rem 0;
+    width: 28rem;
     border-radius: 0.5rem;
     background-color: white;
+    text-align: center;
 }
 
-form h1{
+form h1, form h2{
     color: var(--primaryColor);
 }
 
@@ -64,17 +66,21 @@ form h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    position: relative;
+    width: 100%;
 }
 
 .input-area ion-icon{
     font-size: 1.8rem;
     color: var(--primaryColor);
+    position: absolute;
+    left: 1rem;
 }
 
 form input{
     padding: 0.5rem;
     width: 20rem;
+    height: 2.5rem;
     background-color: transparent;
     border: 1px solid var(--primaryColor);
     border-radius: 10rem;
@@ -99,11 +105,33 @@ form button{
     border-radius: 10rem;
     cursor: pointer;
     transition: 0.5s;
-    
 }
 
 @keyframes moveImage{
     60%{
         background-position: right center;
+    }
+}
+
+@media screen and (max-width: 479px){
+    form input{
+        width: 14rem;
+        height: 2rem;
+    }
+}
+
+@media screen and (max-width: 767px){
+    body{
+        background: transparent;
+    }
+}
+
+@media screen and (max-width: 320px){
+    body{
+        height: 130vh;
+    }
+
+    .input-area{
+        
     }
 }
